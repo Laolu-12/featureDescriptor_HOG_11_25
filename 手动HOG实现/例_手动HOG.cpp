@@ -1,5 +1,3 @@
-//#include "stdafx.h"
-//#include "funtions.h"
 #include<opencv2/opencv.hpp>
 #include<iostream>
 
@@ -10,6 +8,8 @@ using namespace std;
 
 
 /**********************手动实现，通过 HOG (Histogram-of-Oriented-Gradients)比较图像相似度*************************/
+
+//函数声明
 int calcHOG(cv::Mat src, float * hist, int nAngle, int cellSize);
 float normL2(float * Hist1, float * Hist2, int siz);
 
